@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 20px 5px;
+  font-weight: 400;
+}
+
+.hdMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.hdMenu img {
+  width: 25px;
+}
+
+.menu {
+  font-size: 16px;
+  font-weight: 700;
+}

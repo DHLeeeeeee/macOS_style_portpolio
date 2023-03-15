@@ -1,0 +1,19 @@
+.gnb {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  padding: 0 1%;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.gnb img {
+  width: 64px;
+}
