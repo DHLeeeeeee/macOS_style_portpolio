@@ -2,24 +2,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  padding: 10px 20px 5px;
   font-weight: 400;
+  height: 40px;
 }
 
 .hdMenu {
   display: flex;
   align-items: center;
-  gap: 30px;
   font-size: 15px;
 }
 
-.hdMenu img {
-  width: 25px;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
 }
 
-.menu {
+.icon img {
+  width: 1.563rem;
+}
+
+.title {
+  width: 80px;
   font-size: 16px;
   font-weight: 700;
+  transform: translate(0, 1px);
+}
+
+.menuItm {
+  margin-right: 30px;
+}
+
+.right .icon {
+  margin: 0 15px 0;
+}
+
+.time {
+  width: 90px;
+  margin: 0 30px 0 15px;
 }

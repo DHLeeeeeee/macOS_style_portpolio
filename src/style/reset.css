@@ -15,16 +15,10 @@ ol {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
 body {
   line-height: 1;
-}
-
-.Wrap {
-  height: 100vh;
-  background-position-y: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
