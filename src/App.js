@@ -4,6 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import styled from 'styled-components';
 import Menu from './component/Menu';
+import Main from './pages/Main';
+import Project from './pages/Project';
+import Frame from './component/Frame';
 
 // 전체 배경
 const Wrap = styled.div`
@@ -15,11 +18,11 @@ const Wrap = styled.div`
 `;
 
 // 컨텐츠 페이지 나올 공간 위치
-const Content = styled.div`
+const Content = styled.section`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
 `;
 
 function App() {
@@ -31,10 +34,19 @@ function App() {
         <Header title={title} setTitle={setTitle} />
         <Content>
           <Routes>
-            <Route path='/' element={<div>메인임</div>} />
-            <Route path='/project' element={<div>프로젝트임</div>} />
-            <Route path='/about' element={<div>어바웃임</div>} />
-            <Route path='/contact' element={<div>연락처임</div>} />
+            {/* 메인 */}
+            <Route path='/' element={<Main />} />
+
+            <Route path='/' element={<Frame />}>
+              {/* 프로젝트 */}
+              <Route path='project' element={<Project />} />
+
+              {/* 어바웃 */}
+              <Route path='about' element={<div>어바웃임</div>} />
+
+              {/* 컨택트 */}
+              <Route path='contact' element={<div>연락처임</div>} />
+            </Route>
           </Routes>
         </Content>
         <Menu title={title} setTitle={setTitle} />

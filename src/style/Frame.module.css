@@ -1,0 +1,55 @@
+.frame {
+  height: 41.6vw;
+  width: 83.3vw;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#dedede, #b5b5b5);
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: #6d6d6d;
+}
+
+.topBar .btnWrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.topBar_btn {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.topBar_btn_red {
+  margin-left: 0;
+  background-color: #ec6a5e;
+}
+.topBar_btn_yellow {
+  background-color: #f4be4f;
+}
+.topBar_btn_green {
+  background-color: #61c555;
+}
+
+.search {
+  display: flex;
+  gap: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.search input {
+  border: none;
+  outline: none;
+}

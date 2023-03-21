@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Header = ({ title, setTitle }) => {
   /**
    * 헤더에 있는 타이틀 바꿔주는 함수
-   * @param {string} e 타이틀 넣으면 됨
+   * @param {string} t 타이틀 넣으면 됨
    */
-  function titleHandler(e) {
-    setTitle(e);
+  function titleHandler(t) {
+    setTitle(t);
   }
   const [time, setTime] = useState(new Date());
 

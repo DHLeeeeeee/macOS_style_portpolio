@@ -1,0 +1,30 @@
+.project {
+  display: flex;
+  height: calc(100% - 48px);
+}
+
+.projectNav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 15%;
+  max-height: 100%;
+  padding: 30px 15px 15px;
+  background: #eee;
+  border-radius: 0 0 0 10px;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu img {
+  width: 1.3vw;
+}
+
+.menu p {
+  font-size: 0.7vw;
+}

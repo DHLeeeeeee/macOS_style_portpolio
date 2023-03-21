@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom';
 import style from '../style/Menu.module.css';
 
 const Menu = ({ title, setTitle }) => {
-  function titleHandler(e) {
-    setTitle(e);
+  /**
+   * 헤더에 있는 타이틀 바꿔주는 함수
+   * @param {string} t 타이틀 넣으면 됨
+   */
+  function titleHandler(t) {
+    setTitle(t);
   }
 
   return (
