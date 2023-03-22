@@ -18,7 +18,7 @@
 .topBar .btnWrap {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 130px;
 }
 
 .topBar_btn {
@@ -39,6 +39,10 @@
 }
 .topBar_btn_green {
   background-color: #61c555;
+}
+
+.arrows {
+  cursor: pointer;
 }
 
 .search {

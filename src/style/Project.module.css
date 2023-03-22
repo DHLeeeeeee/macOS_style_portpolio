@@ -28,3 +28,26 @@
 .menu p {
   font-size: 0.7vw;
 }
+
+.contentsWrap {
+  display: flex;
+  width: 85%;
+  padding: 15px;
+}
+
+.contentsWrap .left {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contentsWrap .left img {
+  width: 100%;
+}
+
+.contentsWrap .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}

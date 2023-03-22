@@ -1,22 +1,46 @@
 import style from '../style/Project.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
-  const [projects, setProjects] = useState(['캐스퍼', '어반플레이', '건설사업정보시스템 홈페이지', '투두리스트', 'MacOS 스타일 포트폴리오']);
+  const [projects, setProjects] = useState([]);
+  const [img, setImg] = useState();
+  const [name, setName] = useState();
+
+  useEffect(() => {
+    fetch('https://dhleeeeeee.github.io/myapi/portpolio_api/project.json')
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <article className={style.project}>
       <aside className={style.projectNav}>
         {projects.map((it, idx) => {
           return (
-            <Link className={style.menu}>
+            <Link
+              className={style.menu}
+              onClick={() => {
+                setImg(projects[idx].image);
+                setName(projects[idx].name);
+              }}>
               <img src={`${process.env.PUBLIC_URL}/img/icons/folder.png`} alt='' />
-              <p>{projects[idx]}</p>
+              <p>{projects[idx].name}</p>
             </Link>
           );
         })}
       </aside>
-      <div className={style.contentsWrap}></div>
+      <div className={style.contentsWrap}>
+        <div className={style.left}>
+          <img src={img} alt='' />
+        </div>
+        <div className={style.right}>
+          <h2>{name}</h2>
+          <p></p>
+          <span></span>
+        </div>
+      </div>
     </article>
   );
 };
