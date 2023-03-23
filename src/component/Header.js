@@ -61,7 +61,7 @@ const Header = ({ title, setTitle }) => {
             </Link>
           </li>
           <li>
-            <p className={style.time}>{time.toLocaleTimeString()}</p>
+            <p className={style.time}>{time.toLocaleString([], { weekday: 'short', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</p>
           </li>
         </ul>
       </div>

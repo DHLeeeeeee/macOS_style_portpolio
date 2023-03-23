@@ -1,6 +1,7 @@
 .project {
   display: flex;
   height: calc(100% - 48px);
+  color: #333;
 }
 
 .projectNav {
@@ -10,7 +11,7 @@
   width: 15%;
   max-height: 100%;
   padding: 30px 15px 15px;
-  background: #eee;
+  background: rgba(238, 238, 238, 0.5);
   border-radius: 0 0 0 10px;
   overflow: hidden;
 }
@@ -35,19 +36,77 @@
   padding: 15px;
 }
 
-.contentsWrap .left {
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 100%;
   overflow: hidden;
 }
 
-.contentsWrap .left img {
+.left img {
   width: 100%;
 }
 
-.contentsWrap .right {
+.imgWrap {
+  width: 1000px;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.right {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 20%;
+  border-left: 1px solid #eee;
+}
+
+.right h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  word-break: keep-all;
+}
+
+.right p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+
+.right p span {
+  margin-bottom: 5px;
+}
+
+.right p span:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btnWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.right a {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.right a:hover {
+  background-color: #ddd;
 }
