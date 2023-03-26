@@ -1,0 +1,44 @@
+.contact {
+  margin: 0 auto;
+  padding: 100px;
+  width: 1000px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 100px;
+  color: #1c7ebb;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container p {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container li:first-child p {
+  color: #ec6a5e;
+}
+.container li:nth-child(2) p {
+  color: #f4be4f;
+}
+.container li:nth-child(3) p {
+  color: #61c555;
+}
+
+.container a {
+  color: #c6c7cc;
+}
+
+.container a:hover {
+  color: #a9a9a9;
+  font-weight: 900;
+}

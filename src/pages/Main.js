@@ -14,6 +14,8 @@ const cursor = keyframes`
 `;
 
 const TextWrap = styled.p`
+  width: 100vw;
+  text-align: center;
   position: relative;
   font-size: 36px;
   color: #fff;
@@ -34,7 +36,7 @@ const TextWrap = styled.p`
 const Main = () => {
   // 텍스트 효과
   // 완성된 텍스트 변수선언
-  const completiontxt = '안녕하세요 개발자를 꿈꾸는 이동혁입니다.';
+  const completiontxt = '사용자를 생각하며 좋은 기술로 새로운 가능성을 만들어 가고 싶은 웹 개발자 이동혁입니다.';
   // 텍스트를 집어 넣을 빈 state
   const [text, setText] = useState('');
   // 텍스트 개수 새는 state
@@ -44,7 +46,7 @@ const Main = () => {
     const interval = setInterval(() => {
       setText(text + completiontxt[count]); // 이전 set한 문자 + 다음 문자
       setCount(count + 1); // 개수 만큼 체크
-    }, 200);
+    }, 50);
     if (count === completiontxt.length) {
       // Count를 따로 두지 않고 Text.length 체크도 가능
       clearInterval(interval); // 문자열 체크를 통해 setInterval을 해제

@@ -6,7 +6,9 @@ import styled from 'styled-components';
 import Menu from './component/Menu';
 import Main from './pages/Main';
 import Project from './pages/Project';
+import About from './pages/About';
 import Frame from './component/Frame';
+import Contact from './pages/Contact';
 
 // 전체 배경
 const Wrap = styled.div`
@@ -42,10 +44,10 @@ function App() {
               <Route path='project' element={<Project />} />
 
               {/* 어바웃 */}
-              <Route path='about' element={<div>어바웃임</div>} />
+              <Route path='about' element={<About />} />
 
               {/* 컨택트 */}
-              <Route path='contact' element={<div>연락처임</div>} />
+              <Route path='contact' element={<Contact />} />
             </Route>
           </Routes>
         </Content>
