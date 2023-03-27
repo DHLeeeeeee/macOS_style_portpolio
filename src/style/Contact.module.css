@@ -1,26 +1,33 @@
 .contact {
   margin: 0 auto;
-  padding: 100px;
+  padding: 5vw;
   width: 1000px;
+
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+.contact::-webkit-scrollbar {
+  display: none;
 }
 
 .title {
-  font-size: 64px;
+  font-size: 3.333vw;
   font-weight: 800;
-  margin-bottom: 100px;
+  margin-bottom: 5vw;
   color: #1c7ebb;
 }
 
 .container ul {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 2.604vw;
 }
 
 .container p {
   display: flex;
   gap: 10px;
-  font-size: 24px;
+  font-size: 1.25vw;
   font-weight: 700;
 }
 

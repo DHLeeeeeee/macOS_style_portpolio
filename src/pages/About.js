@@ -29,7 +29,7 @@ const About = () => {
                 <img src={`${process.env.PUBLIC_URL}/img/icons/css3.png`} alt='' />
               </div>
               <p>시멘틱 마크업을 준수합니다.</p>
-              <p>CSS 애니매이션 사용가능합니다.</p>
+              <p>CSS 애니메이션을 사용가능합니다.</p>
               <p>미디어쿼리를 이용해 반응형 웹 개발 경험이 있습니다.</p>
               <p>Flex, Grid를 활용하여 다양한 레이아웃 개발이 가능합니다.</p>
             </li>
