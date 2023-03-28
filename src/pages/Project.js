@@ -18,7 +18,7 @@ const Project = () => {
         setProjects(data);
         setName(data[0].name);
         setImg(data[0].image);
-        setDesc(data[0].description.replace(/\n/g, '<br/>'));
+        setDesc(data[0].description);
         setTags(data[0].tags);
         setGithub(data[0].source_code);
         setDemo(data[0].demo);
