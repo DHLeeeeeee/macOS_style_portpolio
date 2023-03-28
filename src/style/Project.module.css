@@ -8,12 +8,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 15%;
+  width: 20%;
   max-height: 100%;
-  padding: 30px 15px 15px;
+  padding: 50px 20px;
   background: rgba(238, 238, 238, 0.5);
   border-radius: 0 0 0 10px;
   overflow: hidden;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .menu {
@@ -23,83 +25,67 @@
 }
 
 .menu img {
-  width: 1.3vw;
+  width: 3rem;
 }
 
 .menu p {
-  font-size: 0.7vw;
+  transform: translate(0, 3px);
 }
 
 .contentsWrap {
+  width: 80%;
+}
+
+.content {
   display: flex;
-  width: 85%;
-  padding: 15px;
 }
 
 .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.left img {
-  width: 100%;
+  border-right: 1px solid #eee;
 }
 
 .imgWrap {
-  width: 1000px;
-  height: 490px;
-  margin-right: 10px;
-  overflow: hidden;
+  width: 800px;
+  height: 400px;
+  margin: 50px 20px;
+}
+
+.imgWrap img {
+  width: 100%;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  width: 25%;
-  border-left: 1px solid #eee;
-  padding: 15px;
+  width: 40%;
+  height: 400px;
+  margin: 50px 20px;
 }
 
-.right h2 {
-  text-align: center;
-  margin-bottom: 20px;
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  word-break: keep-all;
-  font-weight: 700;
 }
 
-.right p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-  word-break: keep-all;
-}
-
-.right p span {
-  margin-bottom: 5px;
-}
-
-.right p span:first-child {
-  font-weight: 700;
-  text-transform: uppercase;
+span {
+  font-size: 1.5rem;
+  font-weight: 300;
+  white-space: pre-line;
 }
 
 .btnWrap {
   display: flex;
   gap: 10px;
+  border-top: 1px solid #000;
 }
 
-.right a {
+.btnWrap a {
   padding: 5px;
   text-align: center;
   border: 1px solid #eee;
@@ -109,6 +95,6 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.right a:hover {
+.btnWrap a:hover {
   background-color: #ddd;
 }

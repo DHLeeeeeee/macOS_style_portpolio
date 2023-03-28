@@ -9,6 +9,15 @@
   color: inherit;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
 ul,
 ol {
   list-style: none;
@@ -17,8 +26,4 @@ ol {
 a {
   display: block;
   text-decoration: none;
-}
-
-body {
-  line-height: 1;
 }

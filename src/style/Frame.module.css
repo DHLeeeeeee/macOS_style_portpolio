@@ -1,10 +1,11 @@
 .frame {
-  height: 36.458vw;
-  width: 83.3vw;
+  max-width: 150rem;
+  height: 70rem;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .topBar {
@@ -12,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(#dedede, #b5b5b5);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px 10px 0 0;
   color: #6d6d6d;
 }
@@ -20,7 +21,7 @@
 .topBar .btnWrap {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .topBar_btn {

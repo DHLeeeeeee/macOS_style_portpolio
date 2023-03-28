@@ -17,6 +17,8 @@ const Wrap = styled.div`
   background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-width: 100rem;
+  min-height: 80rem;
 `;
 
 // 컨텐츠 페이지 나올 공간 위치
@@ -25,6 +27,7 @@ const Content = styled.section`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
+  width: 100%;
 `;
 
 function App() {

@@ -47,31 +47,36 @@ const Project = () => {
         })}
       </aside>
       <div className={style.contentsWrap}>
-        <div className={style.left}>
-          <div className={style.imgWrap}>
-            <img src={img} alt='project_img' />
+        <div className={style.content}>
+          <div className={style.left}>
+            <div className={style.imgWrap}>
+              <img src={img} alt='project_img' />
+            </div>
+          </div>
+          <div className={style.right}>
+            <p>
+              <h2>Project</h2>
+              <span>{name}</span>
+            </p>
+            <p>
+              <h3>Info</h3>
+              <span>{desc}</span>
+            </p>
+            <p>
+              <h3>Tool</h3>
+              {tags.map((it, idx) => {
+                return <span>{it}</span>;
+              })}
+            </p>
           </div>
         </div>
-        <div className={style.right}>
-          <h2>{name}</h2>
-          <p>
-            <span>설명</span>
-            <span>{desc}</span>
-          </p>
-          <p>
-            <span>사용기술</span>
-            {tags.map((it, idx) => {
-              return <span>{it}</span>;
-            })}
-          </p>
-          <div className={style.btnWrap}>
-            <a className={style.gitBtn} href={github} target={'_blank'}>
-              Git Hub
-            </a>
-            <a className={style.demoBtn} href={demo} target={'_blank'}>
-              Demo
-            </a>
-          </div>
+        <div className={style.btnWrap}>
+          <a className={style.gitBtn} href={github} target={'_blank'}>
+            Git Hub
+          </a>
+          <a className={style.demoBtn} href={demo} target={'_blank'}>
+            Demo
+          </a>
         </div>
       </div>
     </article>
