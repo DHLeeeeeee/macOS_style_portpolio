@@ -2,27 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 
-@font-face {
-  font-family: AppleSDGothicNeo;
-  font-weight: 300;
-  src: url(./font/AppleSDGothicNeoL.ttf);
-}
-@font-face {
-  font-family: AppleSDGothicNeo;
-  font-weight: 400;
-  src: url(./font/AppleSDGothicNeoM.ttf);
-}
-@font-face {
-  font-family: AppleSDGothicNeo;
-  font-weight: 700;
-  src: url(./font/AppleSDGothicNeoB.ttf);
-}
-@font-face {
-  font-family: AppleSDGothicNeo;
-  font-weight: 900;
-  src: url(./font/AppleSDGothicNeoH.ttf);
-}
-
 * {
-  font-family: 'AppleSDGothicNeo', 'Noto Sans KR', 'Roboto', sans-serif;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
 }

@@ -23,10 +23,10 @@ const TextWrap = styled.p`
   &::after {
     position: absolute;
     display: inline-block;
-    transform: translate(0, -2px);
+    transform: translate(5px, 2px);
     margin-left: 2px;
     width: 1px;
-    height: 32px;
+    height: 40px;
     background-color: #fff;
     content: '';
     animation: ${cursor} 1s 0.5s infinite;
@@ -36,7 +36,7 @@ const TextWrap = styled.p`
 const Main = () => {
   // 텍스트 효과
   // 완성된 텍스트 변수선언
-  const completiontxt = '사용자를 생각하며 좋은 기술로 새로운 가능성을 만들어 가고 싶은 웹 개발자 이동혁입니다.';
+  const completiontxt = '좋은 기술로 새로운 가능성을 만들어 가고 싶은 웹 개발자 이동혁입니다.';
   // 텍스트를 집어 넣을 빈 state
   const [text, setText] = useState('');
   // 텍스트 개수 새는 state

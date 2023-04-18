@@ -21,7 +21,7 @@ const Contact = () => {
           </li>
           <li>
             <p>
-              Velog :
+              Blog :
               <a href='https://velog.io/@luvya8055' target={'_blank'}>
                 DHLee
               </a>
